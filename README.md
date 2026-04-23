@@ -18,10 +18,15 @@ This is a mobile application built using Apache Cordova, HTML, CSS, and JavaScri
 - JavaScript
 - Apache Cordova
 
-## Installation
+## APK Download
+You can download and test the Android application here:
+
+[Download APK](./app-debug.apk)
+
+## How to Run
 1. Clone the repository
-2. Run the project using Cordova:
+2. Run:
    cordova run browser
 
-## APK
-The app was built into an Android APK and tested on a physical device.
+## Note
+This app was built and tested on a real Android device.
