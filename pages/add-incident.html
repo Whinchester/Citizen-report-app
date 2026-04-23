@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Citizen Report</h1>
+  <h2>Add Incident</h2>
+
+  <form onsubmit="saveIncident(event)">
+    <input id="title" type="text" placeholder="Incident title" required>
+
+    <select id="category">
+      <option>Accident</option>
+      <option>Fighting</option>
+      <option>Rioting</option>
+    </select>
+
+    <textarea id="description" placeholder="Describe incident"></textarea>
+
+    <button type="submit">Submit Incident</button>
+
+    <input id="latitude" type="text" placeholder="Latitude" readonly>
+    <input id="longitude" type="text" placeholder="Longitude" readonly>
+
+    <button type="button" onclick="getLocation()">Use my Location</button>
+
+    <input type="file" name="" id="image" accept="image/*">
+  </form>
+
+  
+  <p><a href="../index.html">Back</a></p>
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

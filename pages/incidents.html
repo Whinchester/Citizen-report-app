@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Incidents</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Citizen Report</h1>
+    
+    <h2>All Incidents</h2>
+
+    <select id="filter" onchange="filterIncidents()">
+      <option value="All">All Categories</option>
+      <option value="Accident">Accident</option>
+      <option value="Fighting">Fighting</option>
+      <option value="Rioting">Rioting</option>
+    </select>
+
+    <div id="incidentList"></div>
+
+    <p><a href="../index.html">Back Home</a></p>
+  </div>
+
+  <script src="../js/app.js"></script>
+  <script>
+    loadIncidents();
+  </script>
+</body>
+</html>
